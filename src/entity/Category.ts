@@ -1,4 +1,4 @@
-type Category = {
+export type Category = {
   id: number;
   attributes: {
     name: string;
@@ -7,5 +7,3 @@ type Category = {
     publishedAt: string;
   };
 };
-
-export default Category;
