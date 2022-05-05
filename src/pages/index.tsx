@@ -7,6 +7,7 @@ import List from '@/templates/products/list';
 
 const index = () => {
   const queryClient = new QueryClient();
+
   return (
     <QueryClientProvider client={queryClient}>
       <Base>

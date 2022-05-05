@@ -4,11 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add changes">
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="fix: refacto Category.ts">
+      <change afterPath="$PROJECT_DIR$/src/api/Category/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/fetch.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/api/useCategoriesQuery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/env.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/products/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -64,7 +68,7 @@
       <workItem from="1648747818743" duration="1534000" />
       <workItem from="1648750156186" duration="198000" />
       <workItem from="1651132738495" duration="3204000" />
-      <workItem from="1651736948570" duration="3690000" />
+      <workItem from="1651736948570" duration="9305000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -101,7 +105,28 @@
       <option name="project" value="LOCAL" />
       <updated>1651737942178</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="feat: install react query">
+      <created>1651744737776</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651744737776</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add Category.ts entity ( type )">
+      <created>1651746034159</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651746034160</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: refacto Category.ts">
+      <created>1651746168481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651746168481</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -121,6 +146,9 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="feat: add changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add changes" />
+    <MESSAGE value="feat: install react query" />
+    <MESSAGE value="feat: add Category.ts entity ( type )" />
+    <MESSAGE value="fix: refacto Category.ts" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: refacto Category.ts" />
   </component>
 </project>
