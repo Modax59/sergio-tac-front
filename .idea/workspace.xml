@@ -4,26 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add changes">
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/front.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/Product.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/base/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/footer/Footer.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/layout/products/itemList.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/product/[id].tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/routes.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: login hook and entity">
+      <change afterPath="$PROJECT_DIR$/src/api/Auth/Register/Register.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/UserRegister.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/api/useRegisterQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/about.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/about.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/products/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,21 +38,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/clementverhille/Documents/sergio/front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/clementverhille/Documents/sergio/front/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/clementverhille/Documents/sergio/front/public/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/clementverhille/Documents/sergio/front/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -78,7 +69,8 @@
       <workItem from="1648747818743" duration="1534000" />
       <workItem from="1648750156186" duration="198000" />
       <workItem from="1651132738495" duration="3204000" />
-      <workItem from="1651736948570" duration="942000" />
+      <workItem from="1651736948570" duration="11355000" />
+      <workItem from="1652341623316" duration="5064000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -108,7 +100,63 @@
       <option name="project" value="LOCAL" />
       <updated>1648750206031</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="feat: add changes">
+      <created>1651737942178</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1651737942178</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: install react query">
+      <created>1651744737776</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1651744737776</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: add Category.ts entity ( type )">
+      <created>1651746034159</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1651746034160</updated>
+    </task>
+    <task id="LOCAL-00008" summary="fix: refacto Category.ts">
+      <created>1651746168481</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1651746168481</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add env, fetch component, custom hook api">
+      <created>1651768370765</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1651768370765</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: add products hooks api, env var and fetch compo">
+      <created>1651770051380</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651770051380</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: add order and orderDetail entity, add hooks to get data from api and add fetch process">
+      <created>1652345025554</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1652345025554</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: login hook and entity">
+      <created>1652346309996</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652346309996</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +176,13 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
     <MESSAGE value="feat: add changes" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add changes" />
+    <MESSAGE value="feat: install react query" />
+    <MESSAGE value="feat: add Category.ts entity ( type )" />
+    <MESSAGE value="fix: refacto Category.ts" />
+    <MESSAGE value="feat: add env, fetch component, custom hook api" />
+    <MESSAGE value="feat: add products hooks api, env var and fetch compo" />
+    <MESSAGE value="feat: add order and orderDetail entity, add hooks to get data from api and add fetch process" />
+    <MESSAGE value="feat: login hook and entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: login hook and entity" />
   </component>
 </project>
