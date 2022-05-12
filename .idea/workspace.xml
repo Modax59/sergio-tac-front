@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add order and orderDetail entity, add hooks to get data from api and add fetch process">
-      <change afterPath="$PROJECT_DIR$/src/api/Auth/Login/Login.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/UserAuth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/api/useLoginQuery.ts" afterDir="false" />
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: login hook and entity">
+      <change afterPath="$PROJECT_DIR$/src/api/Auth/Register/Register.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/UserRegister.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/api/useRegisterQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/templates/products/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
     </list>
@@ -70,7 +70,7 @@
       <workItem from="1648750156186" duration="198000" />
       <workItem from="1651132738495" duration="3204000" />
       <workItem from="1651736948570" duration="11355000" />
-      <workItem from="1652341623316" duration="4091000" />
+      <workItem from="1652341623316" duration="5064000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -149,7 +149,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652345025554</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="feat: login hook and entity">
+      <created>1652346309996</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1652346309996</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -175,6 +182,7 @@
     <MESSAGE value="feat: add env, fetch component, custom hook api" />
     <MESSAGE value="feat: add products hooks api, env var and fetch compo" />
     <MESSAGE value="feat: add order and orderDetail entity, add hooks to get data from api and add fetch process" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add order and orderDetail entity, add hooks to get data from api and add fetch process" />
+    <MESSAGE value="feat: login hook and entity" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: login hook and entity" />
   </component>
 </project>
