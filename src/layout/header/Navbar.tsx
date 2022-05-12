@@ -17,6 +17,7 @@ import {
   XIcon,
 } from '@heroicons/react/outline';
 import { ChevronDownIcon } from '@heroicons/react/solid';
+import Link from 'next/link';
 import { useRouter } from 'next/router';
 
 import routes from '@/utils/routes';
@@ -305,18 +306,16 @@ export default function Navbar() {
             </Popover>
           </Popover.Group>
           <div className="hidden items-center justify-end md:flex md:flex-1 lg:w-0">
-            <a
-              href="#"
-              className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900"
-            >
-              Sign in
-            </a>
-            <a
-              href="#"
-              className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-            >
-              Sign up
-            </a>
+            <Link href="/auth/login">
+              <a className="whitespace-nowrap text-base font-medium text-gray-500 hover:text-gray-900">
+                Connexion
+              </a>
+            </Link>
+            <Link href="/auth/register">
+              <a className="ml-8 inline-flex items-center justify-center whitespace-nowrap rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+                Inscription
+              </a>
+            </Link>
           </div>
         </div>
       </div>
@@ -397,16 +396,15 @@ export default function Navbar() {
                 ))}
               </div>
               <div>
-                <a
-                  href="#"
-                  className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700"
-                >
-                  Sign up
-                </a>
+                <Link href="/login">
+                  <a className="flex w-full items-center justify-center rounded-md border border-transparent bg-indigo-600 px-4 py-2 text-base font-medium text-white shadow-sm hover:bg-indigo-700">
+                    Connexion
+                  </a>
+                </Link>
                 <p className="mt-6 text-center text-base font-medium text-gray-500">
                   Existing customer?{' '}
                   <a href="#" className="text-indigo-600 hover:text-indigo-500">
-                    Sign in
+                    Inscription
                   </a>
                 </p>
               </div>
