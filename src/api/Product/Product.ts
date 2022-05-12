@@ -13,10 +13,12 @@ const fetchProduct = async (
   props: FetchProductProps = { id: undefined }
 ): Promise<Products> => {
   if (props.id) {
-    const { data } = await axios.get(`${env.url + env.productUrl}/${props.id}`);
+    const { data } = await axios.get(
+      `${env.url + env.productUrl}/${props.id}?populate=*`
+    );
     return data;
   }
-  const response = await axios.get(`${env.url + env.productUrl}`);
+  const response = await axios.get(`${env.url + env.productUrl}?populate=*`);
   return response.data;
 };
 export default fetchProduct;

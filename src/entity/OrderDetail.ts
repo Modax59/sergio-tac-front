@@ -1,9 +1,13 @@
-export type Category = {
+export type OrderDetail = {
   id: number;
   attributes: {
-    name: string;
+    Quantity: number;
+    Price: number;
+    TotalPrice: number;
     createdAt: string | null;
     updatedAt: string | null;
     publishedAt: string | null;
+    order: any;
+    product: any;
   };
 };

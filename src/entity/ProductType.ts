@@ -5,9 +5,9 @@ export type ProductType = {
     Content: string;
     Price: number;
     Size: string;
-    createdAt: string;
-    updatedAt: string;
-    publishedAt: string;
+    createdAt: string | null;
+    updatedAt: string | null;
+    publishedAt: string | null;
     Thumbnails: {
       data: {
         id: number;

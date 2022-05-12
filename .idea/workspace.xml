@@ -4,11 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add env, fetch component, custom hook api">
-      <change afterPath="$PROJECT_DIR$/src/api/Products/Product.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entity/ProductType.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/api/useProductsQuery.ts" afterDir="false" />
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add products hooks api, env var and fetch compo">
+      <change afterPath="$PROJECT_DIR$/src/api/Order/Order.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/api/OrderDetail/OrderDetail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/Order.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entity/OrderDetail.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/api/useOrderDetailsQuery.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/api/useOrdersQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Products/Product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Product/Product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/Category.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/Category.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entity/ProductType.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/entity/ProductType.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/api/useCategoriesQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/api/useCategoriesQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/api/useProductsQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/api/useProductsQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/products/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/utils/env.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/env.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,21 +47,26 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/clementverhille/Documents/sergio/front&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/Users/clementverhille/Documents/sergio/front/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/clementverhille/Documents/sergio/front/public/assets/images",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "yarn",
+    "ts.external.directory.path": "/Users/clementverhille/Documents/sergio/front/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public/assets/images" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -64,7 +78,8 @@
       <workItem from="1648747818743" duration="1534000" />
       <workItem from="1648750156186" duration="198000" />
       <workItem from="1651132738495" duration="3204000" />
-      <workItem from="1651736948570" duration="11170000" />
+      <workItem from="1651736948570" duration="11355000" />
+      <workItem from="1652341623316" duration="2866000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -129,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651768370765</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="feat: add products hooks api, env var and fetch compo">
+      <created>1651770051380</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1651770051380</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -153,6 +175,7 @@
     <MESSAGE value="feat: add Category.ts entity ( type )" />
     <MESSAGE value="fix: refacto Category.ts" />
     <MESSAGE value="feat: add env, fetch component, custom hook api" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add env, fetch component, custom hook api" />
+    <MESSAGE value="feat: add products hooks api, env var and fetch compo" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add products hooks api, env var and fetch compo" />
   </component>
 </project>
