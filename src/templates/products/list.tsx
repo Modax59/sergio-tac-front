@@ -3,8 +3,6 @@ import { useProductsQuery } from '@/hooks/api/useProductsQuery';
 
 export default function List() {
   const { data } = useProductsQuery();
-
-  console.log(data.data[0].attributes.Categories.data.attributes.name);
   // @ts-ignore
   return (
     <div className='bg-white'>
@@ -14,7 +12,7 @@ export default function List() {
         </h2>
         <div className='mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8'>
           {data &&
-            data.data.map((product) : any => (
+            data?.data?.map((product) : any => (
               <ProductItemList key={product.id} product={{
                 id: product.id,
                 title: product.attributes.Title,
