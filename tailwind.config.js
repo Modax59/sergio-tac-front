@@ -14,6 +14,9 @@ module.exports = {
       '6xl': '4rem',
     },
     extend: {
+      fontFamily: {
+        Sackers: ['Sackers', 'sans-serif'],
+      },
       colors: {
         gray: {
           100: '#f7fafc',
@@ -37,6 +40,7 @@ module.exports = {
           800: '#2c5282',
           900: '#2a4365',
         },
+        blackst: '#000807',
       },
     },
   },
