@@ -5,24 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add changes">
-      <change afterPath="$PROJECT_DIR$/src/components/AppButton.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/AuthMetamask.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/auth/idUser.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/auth/isAuth.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/user/[id].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lint-staged.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/lint-staged.config.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/api/useLoginQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/api/useLoginQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/hooks/api/useRegisterQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/api/useRegisterQuery.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/_app.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/_app.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/login/login.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/register/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/register/register.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routes.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/layout/products/itemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/products/itemList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/products/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/env.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/env.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
