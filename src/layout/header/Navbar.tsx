@@ -69,8 +69,8 @@ export default function Example() {
                 <div className="flex flex-1 rounded-md ring-teal-500 focus-within:ring-2">
                   <input
                     type="text"
-                    className="w-full rounded-lg px-2 py-1 text-sm text-gray-600 focus:outline-none"
-                    placeholder="Rechercher des articles 🔍"
+                    className="w-full rounded-lg px-4 py-1 text-sm text-gray-600 focus:outline-none"
+                    placeholder="Rechercher des articles"
                   />
                 </div>
                 <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">

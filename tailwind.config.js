@@ -15,7 +15,7 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        Sackers: ['Sackers', 'sans-serif'],
+        Sackers: ['SackersGothicStd-Ligh', 'sans-serif'],
       },
       colors: {
         gray: {
@@ -41,6 +41,7 @@ module.exports = {
           900: '#2a4365',
         },
         blackst: '#000807',
+        greenst: '#9BF435',
       },
     },
   },

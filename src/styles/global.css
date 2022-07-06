@@ -1,7 +1,23 @@
 @font-face {
-  font-family: "Sackers";
-  src: url("../public/assets/fonts/SackersGothicStd-Light.otf");
+  font-family: "SackersGothicStd-Ligh";
+  src: url("../../public/fonts/SackersGothicStd-Light.otf");
 }
+
+.img-gecko{
+  width: 100%; 
+  height: 100%; 
+  background-repeat: no-repeat, repeat;
+  background-image: url("../../public/assets/images/gecko.png");
+}
+
+.img-nft{
+  width: 100%;    
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-image: url("../../public/assets/images/terrain.png");
+}
+
 @tailwind base;
 
 
