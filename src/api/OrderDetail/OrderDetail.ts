@@ -12,12 +12,7 @@ type FetchOrderDetailProps = {
 const fetchOrderDetail = async (
   props: FetchOrderDetailProps = { id: undefined }
 ): Promise<OrderDetails> => {
-  if (props.id) {
-    const { data } = await axios.get(
-      `${env.url + env.orderDetail}/${props.id}?populate=*`
-    );
-    return data;
-  }
+  
   const response = await axios.get(`${env.url + env.orderDetail}?populate=*`);
   return response.data;
 };
