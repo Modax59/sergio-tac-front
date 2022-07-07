@@ -137,7 +137,10 @@ export default function Example() {
                         </>)}
                         {isAuth() && (<><Menu.Item>
                           {({ active }) => (
-                            <Link passHref={true} href={routes.profile+idUser().id}>
+                            <Link passHref={true} href={
+                              // @ts-ignore
+                              routes.profile+idUser().id
+                            }>
                               <a
                                 className={classNames(
                                   active ? 'bg-gray-100' : '',
