@@ -1,9 +1,7 @@
 import axios from 'axios';
 
-import { ProductType } from '@/entity/ProductType';
 import env from '@/utils/env';
 
-type Products = ReadonlyArray<ProductType>;
 
 type FetchProductProps = {
   id?: any

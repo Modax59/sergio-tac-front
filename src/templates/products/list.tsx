@@ -14,6 +14,7 @@ export default function List() {
             data?.data?.map((product: any) => (
               <ProductItemList
                 key={product.id}
+                // @ts-ignore
                 product={{
                   id: product.id,
                   title: product.attributes.Title,

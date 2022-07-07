@@ -27,10 +27,12 @@ type Dispatch = (action: {
 type State = { email: string; password: string };
 
 function reducer(state: State, action: Dispatch) {
+  // @ts-ignore
   switch (action.type) {
     case 'field': {
       return {
         ...state,
+        // @ts-ignore
         [action.fieldName]: action.payload
       };
     }
@@ -129,6 +131,7 @@ export default function Login() {
                   value={state.email}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'email',
                       payload: e.target.value
@@ -150,6 +153,7 @@ export default function Login() {
                   value={state.password}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'password',
                       payload: e.target.value

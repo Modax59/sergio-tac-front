@@ -2,14 +2,15 @@ import React, { useEffect } from "react";
 
 import { useRouter } from "next/router";
 
+
+
 import Base from "@/layout/base";
 import { useProductsQuery } from "@/hooks/api/useProductsQuery";
 import env from "@/utils/env";
 import { useQuery } from "react-query";
-import fetchProduct from "@/api/Product/Product";
 import fetchPostOrders from "@/api/Order/SendOrder";
+
 import jwtDecode from "jwt-decode";
-import e from "express";
 import Routes from "@/utils/routes";
 
 const DetailProduct = () => {
@@ -22,8 +23,11 @@ const DetailProduct = () => {
     () =>
       fetchPostOrders({
         quantity: 1,
+        // @ts-ignore
         price: data?.data?.attributes?.Price,
+        // @ts-ignore
         product: parseInt(id),
+        // @ts-ignore
         user: jwtDecode(localStorage.getItem("access_token")).id,
       }),
     { enabled: false }
@@ -35,6 +39,7 @@ const DetailProduct = () => {
       refetch();
     }
     if (isSuccess) {
+      // @ts-ignore
       router.push(Routes.profile+jwtDecode(localStorage.getItem("access_token")).id);
     }
   }, [id, isSuccess]);
@@ -44,7 +49,7 @@ const DetailProduct = () => {
   }
 
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: any) => {
     e.preventDefault();
     orderRefetch();
   };
@@ -65,7 +70,10 @@ const DetailProduct = () => {
 
                   <div className="mt-8">
                     <p className="text-2xl font-medium tracking-tight">
-                      {data?.data?.attributes?.Price} €
+                      {// @ts-ignore
+                        data?.data?.attributes?.Price
+                      }{' '}
+                      €
                     </p>
                     <p className="mt-1 text-sm text-gray-500">
                       Pour l'achat de :

@@ -11,8 +11,8 @@ type FetchOrderDetailProps = {
 
 const fetchOrderDetail = async (
   props: FetchOrderDetailProps = { id: undefined }
-): Promise<OrderDetails> => {
-  
+): Promise<any> => {
+  console.log(props);
   const response = await axios.get(`${env.url + env.orderDetail}?populate=*`);
   return response.data;
 };

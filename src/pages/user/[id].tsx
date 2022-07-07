@@ -103,9 +103,10 @@ const Account = () => {
                   {!isLoading &&
                     data?.data
                       ?.filter(
-                        (order) => order?.attributes.user_id === parseInt(id)
+                        //@ts-ignore
+                        (order :any) => order?.attributes.user_id === parseInt(id)
                       ).sort(
-                        (a, b) =>
+                        (a:any, b:any) =>
                           a.id > b.id ? -1 : a.id < b.id ? 1 : 0
                       )
                       .map((order: any) => (
@@ -137,7 +138,8 @@ const Account = () => {
                       ))}
                   {!isLoading &&
                     data?.data?.filter(
-                      (order) => order?.attributes.user_id === parseInt(id)
+                      //@ts-ignore
+                      (order:any) => order?.attributes.user_id === parseInt(id)
                     ).length === 0 && (
                       <tr>
                         <td

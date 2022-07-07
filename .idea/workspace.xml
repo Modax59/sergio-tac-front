@@ -4,7 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add changes" />
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add changes">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/OrderDetail/OrderDetail.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/OrderDetail/OrderDetail.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Product/Product.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Product/Product.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/Users/Users.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/Users/Users.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/order/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/order/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/products/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/register/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/register/register.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -70,6 +81,7 @@
       <workItem from="1656947212758" duration="6081000" />
       <workItem from="1657047515549" duration="681000" />
       <workItem from="1657174672674" duration="320000" />
+      <workItem from="1657175004603" duration="929000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -162,7 +174,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657017045315</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="feat: add changes">
+      <created>1657175051528</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657175051528</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
