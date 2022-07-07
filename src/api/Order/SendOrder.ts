@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-import { Order } from '@/entity/Order';
 import env from '@/utils/env';
 
 
