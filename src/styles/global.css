@@ -1,21 +1,27 @@
+@font-face {
+  font-family: "SackersGothicStd-Ligh";
+  src: url("../../public/fonts/SackersGothicStd-Light.otf");
+}
+
+.img-gecko{
+  width: 100%; 
+  height: 100%; 
+  background-repeat: no-repeat, repeat;
+  background-image: url("../../public/assets/images/gecko.png");
+}
+
+.img-nft{
+  width: 100%;    
+  height: 600px;
+  background-size: cover;
+  background-repeat: no-repeat, repeat;
+  background-image: url("../../public/assets/images/terrain.png");
+}
+
 @tailwind base;
 
-a {
-  @apply text-blue-700;
-}
-
-a:hover {
-  @apply border-b-2 border-blue-700;
-}
 
 @tailwind components;
 
 @tailwind utilities;
 
-.content p {
-  @apply my-6;
-}
-
-.content ul {
-  @apply my-6;
-}

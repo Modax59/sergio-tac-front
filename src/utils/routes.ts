@@ -8,6 +8,8 @@ enum Routes {
   logout = '/logout',
   notFound = '/404',
   product_detail = '/product/',
+  category_detail = '/category/',
+  collection_detail = '/collection/',
   order = '/order/',
 }
 

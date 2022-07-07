@@ -27,27 +27,23 @@ const ProductItemList = (props: Props) => {
       onClick={() => router.push(routes.product_detail + props.product.id)}
       className="group relative"
     >
-      <div className="lg:aspect-none w-full overflow-hidden rounded-md bg-gray-200 group-hover:opacity-75 lg:h-80">
+      <div className="lg:aspect-none w-full overflow-hidden bg-gray-200 group-hover:opacity-75 lg:h-96">
         <img
           src={env.url2 + props.product.imageSrc}
           alt={props.product.imageAlt}
-          className="h-full w-full object-cover object-center lg:h-full lg:w-full"
+          className="h-full w-full object-cover  lg:h-full lg:w-full"
         />
       </div>
       <div className="mt-4 flex justify-between">
         <div>
-          <h3 className="text-sm text-gray-700">
-
+          <h3 className="text-base text-white">
             <button onClick={() => router.push(routes.product_detail+props.product.id)}>
               <span aria-hidden="true" className="absolute inset-0" />
               {props.product.title}
             </button>
           </h3>
-          <p className="mt-1 text-sm text-gray-500">{props.product.category}</p>
+          <p className="text-base font-medium text-white">{props.product.category}</p>
         </div>
-        <p className="text-sm font-medium text-gray-900">
-          {props.product.price}
-        </p>
       </div>
     </div>
   );
