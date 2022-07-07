@@ -3,17 +3,19 @@ import React from 'react';
 import { useRouter } from 'next/router';
 
 import routes from '@/utils/routes';
+import env from '@/utils/env';
 
 type Props = {
   key: number;
   product: {
     id: number;
-    name: string;
+    title: string;
     href: string;
     imageSrc: string;
     imageAlt: string;
     price: string;
     color: string;
+    category: string;
   };
 };
 
@@ -27,7 +29,7 @@ const ProductItemList = (props: Props) => {
     >
       <div className="lg:aspect-none w-full overflow-hidden bg-gray-200 group-hover:opacity-75 lg:h-96">
         <img
-          src={props.product.imageSrc}
+          src={env.url2 + props.product.imageSrc}
           alt={props.product.imageAlt}
           className="h-full w-full object-cover  lg:h-full lg:w-full"
         />
@@ -35,14 +37,12 @@ const ProductItemList = (props: Props) => {
       <div className="mt-4 flex justify-between">
         <div>
           <h3 className="text-base text-white">
-            <a href={props.product.href}>
+            <button onClick={() => router.push(routes.product_detail+props.product.id)}>
               <span aria-hidden="true" className="absolute inset-0" />
-              {props.product.name}
-            </a>
+              {props.product.title}
+            </button>
           </h3>
-          <p className="text-base font-medium text-white">
-            {props.product.price}
-          </p>
+          <p className="text-base font-medium text-white">{props.product.category}</p>
         </div>
       </div>
     </div>
