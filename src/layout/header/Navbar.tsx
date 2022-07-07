@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react';
 
+
 import { Disclosure, Menu, Transition } from '@headlessui/react';
 import { MenuIcon, XIcon } from '@heroicons/react/outline';
 import Link from 'next/link';
@@ -12,7 +13,10 @@ import NavbarTop from './NavbarTop';
 const navigation = [
   { name: 'Homme', href: '#', current: false },
   { name: 'Femme', href: '#', current: false },
-];
+  ]
+import AuthMetamask from '@/components/AuthMetamask';
+import isAuth from '@/hooks/auth/isAuth';
+import routes from '@/utils/routes';
 
 function classNames(...classes: string[]) {
   return classes.filter(Boolean).join(' ');

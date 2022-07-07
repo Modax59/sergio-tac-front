@@ -1,44 +1,10 @@
-import Caroussel from '@/layout/caroussel/caroussel';
-import Cta from '@/layout/cta/cta';
+
+import { useProductsQuery } from '@/hooks/api/useProductsQuery';
 import ProductItemList from '@/layout/products/itemList';
-
-import ListCategory from '../category/listcategory';
-import ListCollection from '../collection/listcollection';
-
-const products = [
-  {
-    id: 1,
-    name: 'Survêtement Dazzle pour femmes',
-    href: '#',
-    imageSrc: 'assets/images/sergio-fille.png',
-    imageAlt: 'Survêtement Dazzle pour femmes',
-    price: '133,00€',
-    color: 'Black',
-  },
-
-  {
-    id: 3,
-    name: 'Survêtement Marlon réfléchissant',
-    href: '#',
-    imageSrc: 'assets/images/sergio-bob.png',
-    imageAlt: 'Survêtement Marlon réfléchissant',
-    price: '149,99€',
-    color: 'Black',
-  },
-  {
-    id: 2,
-    name: 'Chapeau Marlon',
-    href: '#',
-    imageSrc: 'assets/images/sergio-homme.png',
-    imageAlt: 'Chapeau Marlon',
-    price: '34,99€',
-    color: 'Black',
-  },
-  // More products...
-];
-
 export default function List() {
+  const { data, isLoading } = useProductsQuery();
   return (
+
     <div>
       <Caroussel />
       <ListCategory />

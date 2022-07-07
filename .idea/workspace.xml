@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: login hook and entity">
-      <change afterPath="$PROJECT_DIR$/src/hooks/auth/useUser.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/templates/products/list.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/products/list.tsx" afterDir="false" />
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add changes">
+      <change beforePath="$PROJECT_DIR$/.eslintrc" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,7 +18,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="feat/connect_login/register" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,12 +39,14 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/clementverhille/Documents/sergio/front/public/assets/images&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/clementverhille/Documents/sergio/front&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/clementverhille/Documents/sergio/front/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -70,6 +69,10 @@
       <workItem from="1651132738495" duration="3204000" />
       <workItem from="1651736948570" duration="11355000" />
       <workItem from="1652341623316" duration="5064000" />
+      <workItem from="1656947212758" duration="6081000" />
+      <workItem from="1657047515549" duration="681000" />
+      <workItem from="1657174672674" duration="320000" />
+      <workItem from="1657175004603" duration="1183000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -155,7 +158,28 @@
       <option name="project" value="LOCAL" />
       <updated>1652346309996</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="feat: add changes">
+      <created>1657017045315</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1657017045315</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: add changes">
+      <created>1657175051528</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1657175051528</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: add changes">
+      <created>1657176053475</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1657176053475</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -174,7 +198,6 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit" />
-    <MESSAGE value="feat: add changes" />
     <MESSAGE value="feat: install react query" />
     <MESSAGE value="feat: add Category.ts entity ( type )" />
     <MESSAGE value="fix: refacto Category.ts" />
@@ -182,6 +205,7 @@
     <MESSAGE value="feat: add products hooks api, env var and fetch compo" />
     <MESSAGE value="feat: add order and orderDetail entity, add hooks to get data from api and add fetch process" />
     <MESSAGE value="feat: login hook and entity" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: login hook and entity" />
+    <MESSAGE value="feat: add changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add changes" />
   </component>
 </project>

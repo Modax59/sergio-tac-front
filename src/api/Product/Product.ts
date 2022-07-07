@@ -11,7 +11,7 @@ type FetchProductProps = {
 
 const fetchProduct = async (
   props: FetchProductProps = { id: undefined }
-): Promise<Products> => {
+): Promise<any> => {
   if (props.id) {
     const { data } = await axios.get(
       `${env.url + env.productUrl}/${props.id}?populate=*`
