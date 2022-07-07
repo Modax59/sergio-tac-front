@@ -29,10 +29,12 @@ type State = {
 };
 
 function reducer(state: State, action: Dispatch) {
+  // @ts-ignore
   switch (action.type) {
     case 'field': {
       return {
         ...state,
+        // @ts-ignore
         [action.fieldName]: action.payload
       };
     }
@@ -95,6 +97,7 @@ export default function Register() {
                   value={state.name}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'name',
                       payload: e.target.value
@@ -117,6 +120,7 @@ export default function Register() {
                   value={state.username}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'username',
                       payload: e.target.value
@@ -139,6 +143,7 @@ export default function Register() {
                   value={state.email}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'email',
                       payload: e.target.value
@@ -161,6 +166,7 @@ export default function Register() {
                   value={state.password}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'password',
                       payload: e.target.value
@@ -183,6 +189,7 @@ export default function Register() {
                   value={state.confirm_password}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'confirm_password',
                       payload: e.target.value

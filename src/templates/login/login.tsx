@@ -1,11 +1,18 @@
-import React, { useEffect, useReducer } from 'react';
+import { useEffect, useReducer } from 'react';
 
 import { useLoginQuery } from '@/hooks/api/useLoginQuery';
 import { useUser } from '@/hooks/auth/useUser';
 import idUser from '@/hooks/auth/idUser';
 import { useRouter } from 'next/router';
+import Snackbar from '@mui/material/Snackbar';
+import {AiOutlineClose} from "react-icons/ai"
+
+
 
 import routes from '@/utils/routes';
+import Button from '@mui/material/Button';
+import { IconButton } from '@mui/material';
+import React from 'react';
 
 const initialState = {
   email: '',
@@ -20,10 +27,12 @@ type Dispatch = (action: {
 type State = { email: string; password: string };
 
 function reducer(state: State, action: Dispatch) {
+  // @ts-ignore
   switch (action.type) {
     case 'field': {
       return {
         ...state,
+        // @ts-ignore
         [action.fieldName]: action.payload
       };
     }
@@ -34,13 +43,28 @@ function reducer(state: State, action: Dispatch) {
 }
 
 export default function Login() {
+  const [open, setOpen] = React.useState(false);
   const [state, dispatch] = useReducer(reducer, initialState);
   const router = useRouter();
   const userProvider = useUser();
-  const { refetch, data } = useLoginQuery({
+  const { refetch, data, isError, isSuccess, isLoading } = useLoginQuery({
     identifier: state.email,
     password: state.password,
   });
+
+  useEffect(() => {
+    console.log(isSuccess, isError);
+    if(isSuccess) {
+      setOpen(true);
+    }
+    if(isError) {
+      setOpen(true);
+    }
+    if(isLoading) {
+      setOpen(true)
+    }
+  }, [isSuccess, isError, isLoading]);
+  
 
   const handleSubmit = (e: any) => {
     e.preventDefault();
@@ -49,6 +73,7 @@ export default function Login() {
 
   useEffect(() => {
     if (data && data.jwt) {
+      setOpen(true);
       userProvider.accessToken = data.jwt;
       localStorage.setItem('access_token', data.jwt);
       // @ts-ignore
@@ -56,8 +81,29 @@ export default function Login() {
     }
   }, [data]);
 
+  const action = (
+    <React.Fragment>
+      <IconButton
+        size="small"
+        aria-label="close"
+        color="inherit"
+        onClick={() => setOpen(false)}
+      >
+        <AiOutlineClose />
+      </IconButton>
+    </React.Fragment>
+  );
+
   return (
     <>
+    <Snackbar
+        open={open}
+        anchorOrigin={{ vertical: 'top', horizontal: 'right' }}
+        autoHideDuration={6000}
+        onClose={() => setOpen(false)}
+        message={isLoading ? "Connexion en cours !" : isSuccess ? "Connexion réussie !" : isError ? "Connexion échouée !" : ""}
+        action={action}
+      />
       <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
         <div className='w-full max-w-md space-y-8'>
           <div>
@@ -85,6 +131,7 @@ export default function Login() {
                   value={state.email}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'email',
                       payload: e.target.value
@@ -106,6 +153,7 @@ export default function Login() {
                   value={state.password}
                   onChange={(e) =>
                     dispatch({
+                      // @ts-ignore
                       type: 'field',
                       fieldName: 'password',
                       payload: e.target.value

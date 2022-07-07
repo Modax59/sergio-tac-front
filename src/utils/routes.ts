@@ -8,6 +8,7 @@ enum Routes {
   logout = '/logout',
   notFound = '/404',
   product_detail = '/product/',
+  order = '/order/',
 }
 
 export default Routes;
