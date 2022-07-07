@@ -19,7 +19,7 @@ export default function List() {
           </h2>
           <div className="mt-6 grid grid-cols-1 gap-y-10 gap-x-6 sm:grid-cols-2 lg:grid-cols-4 xl:gap-x-8">
             {!isLoading &&
-              data?.data?.map((product: any) => (
+              data?.data?.slice(0,3).map((product: any) => (
                 <ProductItemList
                   key={product.id}
                   // @ts-ignore
