@@ -1,5 +1,9 @@
 import React from 'react';
 
+import aptenis from "../../assets/images/aptennis.png"
+import blurpv from "../../assets/images/blurpv.png"
+import blurpv2 from "../../assets/images/blurpb.png"
+
 const Caroussel = () => {
   return (
     <div className="img-nft relative overflow-hidden bg-blackst dark:bg-gray-800">
@@ -25,13 +29,13 @@ const Caroussel = () => {
         <div className=" z-20 flex w-1/2 flex-col  py-12 px-4 sm:px-6 lg:py-16 lg:px-14">
           <img
             className="absolute top-10 right-20 h-96 object-cover"
-            src="assets/images/blurpb.png"
+            src={blurpv2.src}
             alt="blurpv"
           />
           <h2 className="relative text-center text-6xl font-extrabold text-black dark:text-white ">
             <img
               className="absolute -z-10"
-              src="assets/images/blurpv.png"
+              src={blurpv.src}
               alt="blurpv"
             />
             <span className="block h-16">SERGIO TACCHINI</span>
@@ -41,7 +45,7 @@ const Caroussel = () => {
 
           <img
             className="absolute bottom-0 right-0 z-10"
-            src="assets/images/aptennis.png"
+            src={aptenis.src}
             alt="aptenis"
           />
         </div>

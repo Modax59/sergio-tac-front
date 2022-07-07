@@ -1,4 +1,5 @@
 import React from 'react';
+import logo from "../../assets/images/logo.png"
 
 import { BsFacebook, BsInstagram, BsTwitter } from 'react-icons/bs';
 
@@ -9,7 +10,7 @@ const Footer = () => {
         <ul className="flex flex-wrap  justify-center pb-8 text-lg font-light">
           <li className="w-1/2 md:w-1/3 lg:w-2/6">
             <div className="mr-5 w-64 text-left">
-              <img className="mb-4" src="assets/images/logo.png" alt="Logo" />
+              <img className="mb-4" src={logo.src} alt="Logo" />
               <h2 className="mb-4 text-white ">
                 Inscris-toi à notre newsletter
               </h2>
