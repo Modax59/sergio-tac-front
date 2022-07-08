@@ -42,7 +42,7 @@ const ProductItemList = (props: Props) => {
               {props.product.title}
             </button>
           </h3>
-          <p className="text-base font-medium text-white">{props.product.category}</p>
+          <p className="text-base font-medium text-white">{props.product.price}€</p>
         </div>
       </div>
     </div>

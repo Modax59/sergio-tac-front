@@ -17,8 +17,8 @@ import logo from "../../assets/images/logo.png";
 import Image from 'next/image';
 
 const navigation = [
-  { name: 'Homme', href: '#', current: false },
-  { name: 'Femme', href: '#', current: false }
+  { name: 'Homme', href: routes.products_category, current: false },
+  { name: 'Femme', href: routes.products_category, current: false }
 ];
 
 function classNames(...classes: string[]) {
@@ -67,9 +67,9 @@ export default function Example() {
                   <div className='hidden sm:ml-6 sm:block'>
                     <div className='flex space-x-4'>
                       {navigation.map((item) => (
-                        <a
+                        <Link href={routes.products_category+item.name}>
+                        <button
                           key={item.name}
-                          href={item.href}
                           className={classNames(
                             item.current
                               ? 'bg-gray-900 text-white'
@@ -79,7 +79,8 @@ export default function Example() {
                           aria-current={item.current ? 'page' : undefined}
                         >
                           {item.name}
-                        </a>
+                        </button>
+                        </Link>
                       ))}
                     </div>
                   </div>
