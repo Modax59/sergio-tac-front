@@ -16,10 +16,10 @@ const AuthMetamask = () => {
   }
 
   return (
-    <div className="ml-auto flex flex-col">
-      <AppButton  onClick={disconnectWallet}>Déconnexion</AppButton>
-      <span>
-        Connecté à {address.substring(0, 5)}...{address.slice(-4)}
+    <div className="ml-auto flex-col">
+      <AppButton className="ml-auto"  onClick={disconnectWallet}>Déconnexion</AppButton>
+      <span className="ml-10 text-gray-300">
+        Connecté à l'adresse {address.substring(0, 5)}...{address.slice(-4)}
       </span>
     </div>
   );

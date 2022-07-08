@@ -4,8 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add hooks and query api from opensea">
-      <change beforePath="$PROJECT_DIR$/src/hooks/api/useAssetsQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/api/useAssetsQuery.ts" afterDir="false" />
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: remove id from assets">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthMetamask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthMetamask.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/[id].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -73,7 +75,7 @@
       <workItem from="1651736948570" duration="11355000" />
       <workItem from="1652341623316" duration="5064000" />
       <workItem from="1657260958077" duration="178000" />
-      <workItem from="1657261279604" duration="780000" />
+      <workItem from="1657261279604" duration="2603000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -208,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657262319543</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="feat: remove id from assets">
+      <created>1657262364880</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1657262364880</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -240,6 +249,7 @@
     <MESSAGE value="FIX: images bugs" />
     <MESSAGE value="feat: change navbar cursor" />
     <MESSAGE value="feat: add hooks and query api from opensea" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add hooks and query api from opensea" />
+    <MESSAGE value="feat: remove id from assets" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: remove id from assets" />
   </component>
 </project>
