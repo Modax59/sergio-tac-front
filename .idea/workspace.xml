@@ -4,9 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="FIX: images bugs">
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: change navbar cursor">
+      <change afterPath="$PROJECT_DIR$/src/api/OpenSea/Assets.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/hooks/api/useAssetsQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/AuthMetamask.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/AuthMetamask.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/user/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/user/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/utils/env.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/env.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,12 +45,13 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/clementverhille/Documents/sergio/front/public/assets/images&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/clementverhille/Documents/sergio/front&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/Users/clementverhille/Documents/sergio/front/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
@@ -72,6 +77,8 @@
       <workItem from="1651132738495" duration="3204000" />
       <workItem from="1651736948570" duration="11355000" />
       <workItem from="1652341623316" duration="5064000" />
+      <workItem from="1657260958077" duration="178000" />
+      <workItem from="1657261279604" duration="726000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -192,7 +199,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657180435110</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="feat: change navbar cursor">
+      <created>1657180770288</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1657180770288</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -222,6 +236,7 @@
     <MESSAGE value="feat: add products" />
     <MESSAGE value="fix: navbar bugs" />
     <MESSAGE value="FIX: images bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="FIX: images bugs" />
+    <MESSAGE value="feat: change navbar cursor" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: change navbar cursor" />
   </component>
 </project>

@@ -6,6 +6,9 @@ const orderUrl = 'orders';
 const orderDetail = 'order-details';
 const userUrl = 'users';
 
+const open_sea_url = 'https://testnets-api.opensea.io/api/v1/';
+const open_sea_assets = 'assets';
+
 export default {
   url,
   url2,
@@ -13,5 +16,7 @@ export default {
   productUrl,
   orderUrl,
   orderDetail,
-  userUrl
+  userUrl,
+  open_sea_url,
+  open_sea_assets
 };

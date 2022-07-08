@@ -9,6 +9,7 @@ import Base from "@/layout/base";
 import { useOrderDetailsQuery } from "@/hooks/api/useOrderDetailsQuery";
 import { useQuery } from "react-query";
 import fetchUsers from "@/api/Users/Users";
+import AuthMetamask from '@/components/AuthMetamask';
 
 const Account = () => {
   const router = useRouter();
@@ -29,6 +30,14 @@ const Account = () => {
       <div className="m-5 ">
         <h1 className="text-xl font-bold text-gray-800">Mon profile</h1>
         <div className="my-5"></div>
+        <div>
+          <h2 className="text-base mb-4 font-bold mx-8">
+            Mes NFTs
+          </h2>
+          <div className='mx-10 my-5'>
+            <AuthMetamask />
+          </div>
+        </div>
         <h2 className="text-base mb-4 font-bold mx-8">Mes informations</h2>
         <div className="grid grid-cols-3 mx-10 gap-4">
           {!isLoadingUser && dataUser && (

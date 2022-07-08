@@ -10,16 +10,16 @@ const AuthMetamask = () => {
   if (!address) {
     return (
       <AppButton className="ml-auto" onClick={connectWithMetamask}>
-        Connect Wallet
+        Connexion avec Metamask
       </AppButton>
     );
   }
 
   return (
     <div className="ml-auto flex flex-col">
-      <AppButton  onClick={disconnectWallet}>Disconnect</AppButton>
+      <AppButton  onClick={disconnectWallet}>Déconnexion</AppButton>
       <span>
-        Connected to {address.substring(0, 5)}...{address.slice(-4)}
+        Connecté à {address.substring(0, 5)}...{address.slice(-4)}
       </span>
     </div>
   );
