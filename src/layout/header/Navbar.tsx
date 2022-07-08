@@ -149,7 +149,7 @@ export default function Example() {
                           {({ active }) => (
                             <Link passHref={true} href={
                               // @ts-ignore
-                              routes.profile+idUser().id
+                              routes.profile+idUser()?.id
                             }>
                               <a
                                 className={classNames(
