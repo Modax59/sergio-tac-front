@@ -16,10 +16,6 @@ const DetailProduct = () => {
   const { value } = router.query;
 
   useEffect(() => {
-
-  },[])
-
-  useEffect(() => {
     // @ts-ignore
     return setSearch(value);
   }, [value]);
@@ -37,6 +33,7 @@ const DetailProduct = () => {
           <div className="my-5">
             <input
               ref={input => input && input.focus()}
+
               type='text'
               className='w-full rounded-lg px-4 py-1 text-sm text-gray-600 focus:outline-none'
               placeholder='Rechercher des articles'

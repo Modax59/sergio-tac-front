@@ -4,13 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add assets to profile and change design color">
-      <change afterPath="$PROJECT_DIR$/src/api/Product/SearchProducts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/hooks/api/useSearchProducts.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/pages/product/search/[value].tsx" afterDir="false" />
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add search products">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/routes.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product/search/[value].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/search/[value].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +74,7 @@
       <workItem from="1651736948570" duration="11355000" />
       <workItem from="1652341623316" duration="5064000" />
       <workItem from="1657260958077" duration="178000" />
-      <workItem from="1657261279604" duration="6216000" />
+      <workItem from="1657261279604" duration="6714000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -227,7 +223,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657264553821</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="feat: add search products">
+      <created>1657270197593</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1657270197593</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -261,6 +264,7 @@
     <MESSAGE value="feat: add hooks and query api from opensea" />
     <MESSAGE value="feat: remove id from assets" />
     <MESSAGE value="feat: add assets to profile and change design color" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add assets to profile and change design color" />
+    <MESSAGE value="feat: add search products" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add search products" />
   </component>
 </project>
