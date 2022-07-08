@@ -28,6 +28,12 @@ function classNames(...classes: string[]) {
 export default function Example() {
   const router = useRouter();
 
+  const handleSearch = (value:string) => {
+    if(value.length > 0) {
+      router.push(routes.products_search + value);
+    }
+  }
+
   return (
     <div>
       <NavbarTop />
@@ -83,6 +89,7 @@ export default function Example() {
                     type='text'
                     className='w-full rounded-lg px-4 py-1 text-sm text-gray-600 focus:outline-none'
                     placeholder='Rechercher des articles'
+                    onChange={(e) => handleSearch(e.target.value)}
                   />
                 </div>
                 <div
