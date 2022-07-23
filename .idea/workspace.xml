@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add login, register and detail product">
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/categorys/itemList.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/categorys/itemList.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/hooks/api/useProductQuery.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/hooks/api/useProductQuery.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/[id].tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,7 +79,8 @@
       <workItem from="1657295295047" duration="221000" />
       <workItem from="1658573704674" duration="389000" />
       <workItem from="1658574101519" duration="13000" />
-      <workItem from="1658574641055" duration="2139000" />
+      <workItem from="1658574641055" duration="2321000" />
+      <workItem from="1658577545564" duration="43000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -262,7 +264,14 @@
       <option name="project" value="LOCAL" />
       <updated>1658576992812</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="feat: add changes">
+      <created>1658577429376</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1658577429376</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -288,7 +297,6 @@
     <MESSAGE value="feat: add products hooks api, env var and fetch compo" />
     <MESSAGE value="feat: add order and orderDetail entity, add hooks to get data from api and add fetch process" />
     <MESSAGE value="feat: login hook and entity" />
-    <MESSAGE value="feat: add changes" />
     <MESSAGE value="feat: add products" />
     <MESSAGE value="fix: navbar bugs" />
     <MESSAGE value="FIX: images bugs" />
@@ -300,6 +308,7 @@
     <MESSAGE value="feat: add categories product" />
     <MESSAGE value="fix: bug when disconnect" />
     <MESSAGE value="feat: add login, register and detail product" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add login, register and detail product" />
+    <MESSAGE value="feat: add changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add changes" />
   </component>
 </project>

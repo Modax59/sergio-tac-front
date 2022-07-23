@@ -68,7 +68,7 @@ function classNames(...classes: string[]) {
 const DetailProduct = () => {
   const router = useRouter();
   const { id } = router.query;
-  const { data, refetch, isLoading } = useProductQuery(parseInt(id));
+  const { data, refetch, isLoading } = useProductQuery(id);
 
   useEffect(() => {
     if(id) {
