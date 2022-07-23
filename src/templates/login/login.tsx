@@ -104,22 +104,18 @@ export default function Login() {
         message={isLoading ? "Connexion en cours !" : isSuccess ? "Connexion réussie !" : isError ? "Connexion échouée !" : ""}
         action={action}
       />
-      <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8'>
+
+      <div className='flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8 mb-56'>
         <div className='w-full max-w-md space-y-8'>
           <div>
-            <img
-              className='mx-auto h-12 w-auto'
-              src='https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg'
-              alt='Workflow'
-            />
-            <h2 className='mt-6 text-center text-3xl font-extrabold text-gray-900'>
-              Connection
+            <h2 className='mt-6 text-center text-3xl text-gray-900'>
+              Connexion
             </h2>
           </div>
           <form className='mt-8 space-y-6' action='#' method='POST'>
             <input type='hidden' name='remember' defaultValue='true' />
             <div className='-space-y-px rounded-md shadow-sm'>
-              <div>
+              <div className='mb-6'>
                 <label htmlFor='email-address' className='sr-only'>
                   Email
                 </label>
@@ -138,7 +134,7 @@ export default function Login() {
                     })
                   }
                   required
-                  className='relative block w-full appearance-none rounded-none rounded-t-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm'
+                  className='relative block w-full appearance-none rounded-none border border-black px-3 py-2 text-gray-900 placeholder:text-gray-700 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm'
                   placeholder='Adresse mail'
                 />
               </div>
@@ -161,7 +157,7 @@ export default function Login() {
                   }
                   autoComplete='current-password'
                   required
-                  className='relative block w-full appearance-none rounded-none rounded-b-md border border-gray-300 px-3 py-2 text-gray-900 placeholder:text-gray-500 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm'
+                  className='relative block w-full appearance-none rounded-none border border-black px-3 py-2 text-gray-900 placeholder:text-gray-700 focus:z-10 focus:border-indigo-500 focus:outline-none focus:ring-indigo-500 sm:text-sm'
                   placeholder='Mot de passe'
                 />
               </div>
@@ -197,7 +193,7 @@ export default function Login() {
               <button
                 type='submit'
                 onClick={(e) => handleSubmit(e)}
-                className='group relative flex w-full justify-center rounded-md border border-transparent bg-indigo-600 py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
+                className='group relative flex w-full justify-center rounded-md border border-transparent bg-black py-2 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2'
               >
                 Connexion
               </button>

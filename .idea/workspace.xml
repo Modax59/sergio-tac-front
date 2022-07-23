@@ -4,9 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="feat: add categories product">
+    <list default="true" id="e7a39d8e-5d2c-4ae5-bce7-53b7f67fe1b9" name="Changes" comment="fix: bug when disconnect">
+      <change afterPath="$PROJECT_DIR$/src/hooks/api/useProductQuery.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/layout/header/Navbar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/pages/product/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/product/[id].tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/login/login.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/login/login.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/templates/register/register.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/templates/register/register.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +78,10 @@
       <workItem from="1652341623316" duration="5064000" />
       <workItem from="1657260958077" duration="178000" />
       <workItem from="1657261279604" duration="7995000" />
-      <workItem from="1657295295047" duration="136000" />
+      <workItem from="1657295295047" duration="221000" />
+      <workItem from="1658573704674" duration="389000" />
+      <workItem from="1658574101519" duration="13000" />
+      <workItem from="1658574641055" duration="1777000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <created>1648749186717</created>
@@ -245,7 +251,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657273490734</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="fix: bug when disconnect">
+      <created>1657295510717</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1657295510717</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -281,6 +294,7 @@
     <MESSAGE value="feat: add assets to profile and change design color" />
     <MESSAGE value="feat: add search products" />
     <MESSAGE value="feat: add categories product" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add categories product" />
+    <MESSAGE value="fix: bug when disconnect" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix: bug when disconnect" />
   </component>
 </project>
